@@ -7,12 +7,11 @@ public class Client {
 	String prenom;
 	AdressePostale adresse;
 
-	public Client(int param1, String param2, String param3) {
-		System.out.println(param1);
-		numeroCompte = param1;
-		nom = param2;
-		prenom = param3;
-		System.out.println(numeroCompte + " " + nom + " " + prenom);
+	public Client(int numeroCompte, String nom, String prenom) {
+
+		this.numeroCompte = numeroCompte;
+		this.nom = nom;
+		this.prenom = prenom;
 
 	}
 
