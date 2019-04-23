@@ -25,7 +25,7 @@ public class TestCercle {
 		System.out.println(c4.getSurface());
 
 		cercleService.doubler(c2);
-		System.out.println(c2.rayon);
+		System.out.println(c2.getRayon());
 
 	}
 

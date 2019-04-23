@@ -7,27 +7,22 @@ public class TestPersonne {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		Personne p1 = new Personne();
 		Personne p2 = new Personne();
-		
-		p1.nom = "Pierre";
-		p1.prenom = "Guillaume";
-//		p1.adresse = new AdressePostale();
-		p1.adresse.CP = 56930;
-		p1.adresse.libelleRue = "Impasse Edith Piaf";
-		p1.adresse.numeroRue = 14;
-		p1.adresse.ville = "Pluméliau";
 
-		
-		p2.nom = "Bonnamy";
-		p2.prenom = "Richard";
-//		p2.adresse = new AdressePostale();
-		p2.adresse.CP = 44000;
-		p2.adresse.libelleRue = "rue de Java";
-		p2.adresse.numeroRue = 55;
-		p2.adresse.ville = "Nantes";
-		
+		p1.setNom("Pierre");
+		p1.setPrenom("Guillaume");
+		p1.setAdresse(new AdressePostale(14, "Impasse Edith Piaf", 56930, "Pluméliau"));
+
+		p2.setNom("Bellamy");
+		p2.setPrenom("Richard");
+		p2.setAdresse(new AdressePostale(55, "rue de Java", 44000, "Nantes"));
+//		p2.adresse.CP = 44000;
+//		p2.adresse.libelleRue = "rue de Java";
+//		p2.adresse.numeroRue = 55;
+//		p2.adresse.ville = "Nantes";
+
 		System.out.println(p1);
 		System.out.println(p2);
 

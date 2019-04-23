@@ -2,12 +2,12 @@ package entites;
 
 public class Client {
 
-	static int cpt = 1;
-	int id;
-	int numeroCompte;
-	String nom;
-	String prenom;
-	AdressePostale adresse;
+	private static int cpt = 1;
+	private int id;
+	private int numeroCompte;
+	private String nom;
+	private String prenom;
+	private AdressePostale adresse;
 
 	public Client(int numeroCompte, String nom, String prenom) {
 

@@ -4,7 +4,8 @@ import entites.Cercle;
 
 public class CercleService {
 	public void doubler(Cercle c) {
-		c.rayon = c.rayon * 2;
+		c.setRayon(c.getRayon() * 2);
+//		c.rayon = c.rayon * 2;
 	}
 
 }

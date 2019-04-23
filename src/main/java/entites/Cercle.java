@@ -2,7 +2,7 @@ package entites;
 
 public class Cercle {
 
-	public double rayon;
+	private double rayon;
 
 	public Cercle(double rayon) {
 
@@ -15,6 +15,14 @@ public class Cercle {
 
 	public double getSurface() {
 		return Math.PI * Math.pow(this.rayon, 2);
+	}
+
+	public double getRayon() {
+		return rayon;
+	}
+
+	public void setRayon(double rayon) {
+		this.rayon = rayon;
 	}
 
 }

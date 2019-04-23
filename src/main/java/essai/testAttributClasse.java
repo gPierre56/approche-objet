@@ -10,11 +10,11 @@ public class testAttributClasse {
 		AdressePostale a = new AdressePostale(25, "rue exemple", 54841, "ville exemple");
 		AdressePostale b = new AdressePostale(47, "rue demo", 12478, "ville demo");
 
-		a.nbDepartement = 103;
+		AdressePostale.setNbDepartement(103);
 
-		System.out.println(a.nbDepartement);
-		System.out.println(b.nbDepartement);
-		System.out.println(AdressePostale.nbDepartement);
+		System.out.println(a.getNbDepartement());
+		System.out.println(b.getNbDepartement());
+		System.out.println(AdressePostale.getNbDepartement());
 
 	}
 

@@ -2,11 +2,11 @@ package entites;
 
 public class AdressePostale {
 
-	public int numeroRue;
-	public String libelleRue;
-	public int CP;
-	public String ville;
-	public static int nbDepartement = 101;
+	private int numeroRue;
+	private String libelleRue;
+	private int CP;
+	private String ville;
+	private static int nbDepartement = 101;
 
 	public AdressePostale(int numeroRue, String libelleRue, int CP, String ville) {
 		this.numeroRue = numeroRue;
@@ -14,6 +14,46 @@ public class AdressePostale {
 		this.CP = CP;
 		this.ville = ville;
 
+	}
+
+	public int getNumeroRue() {
+		return numeroRue;
+	}
+
+	public void setNumeroRue(int numeroRue) {
+		this.numeroRue = numeroRue;
+	}
+
+	public String getLibelleRue() {
+		return libelleRue;
+	}
+
+	public void setLibelleRue(String libelleRue) {
+		this.libelleRue = libelleRue;
+	}
+
+	public int getCP() {
+		return CP;
+	}
+
+	public void setCP(int cP) {
+		CP = cP;
+	}
+
+	public String getVille() {
+		return ville;
+	}
+
+	public void setVille(String ville) {
+		this.ville = ville;
+	}
+
+	public static int getNbDepartement() {
+		return nbDepartement;
+	}
+
+	public static void setNbDepartement(int nbDepartement) {
+		AdressePostale.nbDepartement = nbDepartement;
 	}
 
 	@Override
