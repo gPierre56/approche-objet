@@ -13,6 +13,9 @@ public class TestClient {
 
 		Client c3 = new Client(56, "Random", "John", new AdressePostale(456, "rue au pif", 45879, "Random city"));
 
+		System.out.println(c1);
+		System.out.println(c2);
+
 		System.out.println(c3);
 	}
 

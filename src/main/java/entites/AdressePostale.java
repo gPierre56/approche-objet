@@ -6,14 +6,14 @@ public class AdressePostale {
 	public String libelleRue;
 	public int CP;
 	public String ville;
-	public static int nbDepartement;
+	public static int nbDepartement = 101;
 
 	public AdressePostale(int numeroRue, String libelleRue, int CP, String ville) {
 		this.numeroRue = numeroRue;
 		this.libelleRue = libelleRue;
 		this.CP = CP;
 		this.ville = ville;
-		AdressePostale.nbDepartement = 101;
+
 	}
 
 	@Override

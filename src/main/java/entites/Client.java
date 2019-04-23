@@ -2,6 +2,8 @@ package entites;
 
 public class Client {
 
+	static int cpt = 1;
+	int id;
 	int numeroCompte;
 	String nom;
 	String prenom;
@@ -12,6 +14,7 @@ public class Client {
 		this.numeroCompte = numeroCompte;
 		this.nom = nom;
 		this.prenom = prenom;
+		id = cpt++;
 
 	}
 
@@ -23,8 +26,8 @@ public class Client {
 
 	@Override
 	public String toString() {
-		return "Client [numeroCompte=" + numeroCompte + ", nom=" + nom + ", prenom=" + prenom + ", adresse=" + adresse
-				+ "]";
+		return "Client [id=" + id + ", numeroCompte=" + numeroCompte + ", nom=" + nom + ", prenom=" + prenom
+				+ ", adresse=" + adresse + "]";
 	}
 
 }
