@@ -17,6 +17,38 @@ public class TestClient {
 		System.out.println(c2);
 
 		System.out.println(c3);
+
+		// affichage du nom et prénom en majuscule
+
+		c1.clientToUC();
+
+		// modif du nom
+
+		c1.setNom("Bellamy");
+		System.out.println(c1);
+
+		// modif du prénom
+
+		c1.setPrenom("Laurence");
+		System.out.println(c1);
+
+		// modif num compte
+
+		c1.setNumeroCompte(56);
+		System.out.println(c1);
+
+		// getter nom
+
+		System.out.println(c1.getNom());
+
+		// getter prénom
+
+		System.out.println(c1.getPrenom());
+
+		// getter numCompte
+
+		System.out.println(c1.getNumeroCompte());
+
 	}
 
 }

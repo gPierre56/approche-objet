@@ -24,6 +24,34 @@ public class Client {
 
 	}
 
+	public void clientToUC() {
+		System.out.println(this.prenom.toUpperCase() + " " + this.nom.toUpperCase());
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+	public void setNumeroCompte(int numeroCompte) {
+		this.numeroCompte = numeroCompte;
+	}
+
+	public String getNom() {
+		return this.nom;
+	}
+
+	public String getPrenom() {
+		return this.prenom;
+	}
+
+	public int getNumeroCompte() {
+		return this.numeroCompte;
+	}
+
 	@Override
 	public String toString() {
 		return "Client [id=" + id + ", numeroCompte=" + numeroCompte + ", nom=" + nom + ", prenom=" + prenom
