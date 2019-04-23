@@ -16,9 +16,7 @@ public class Client {
 	}
 
 	public Client(int numeroCompte, String nom, String prenom, AdressePostale adresse) {
-		this.numeroCompte = numeroCompte;
-		this.nom = nom;
-		this.prenom = prenom;
+		this(numeroCompte, nom, prenom);
 		this.adresse = adresse;
 
 	}
