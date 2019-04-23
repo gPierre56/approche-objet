@@ -13,7 +13,7 @@ public class AdressePostale {
 		this.libelleRue = libelleRue;
 		this.CP = CP;
 		this.ville = ville;
-		this.nbDepartement = 101;
+		AdressePostale.nbDepartement = 101;
 	}
 
 	@Override
