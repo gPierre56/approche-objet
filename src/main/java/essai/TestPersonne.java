@@ -13,7 +13,7 @@ public class TestPersonne {
 		
 		p1.nom = "Pierre";
 		p1.prenom = "Guillaume";
-		p1.adresse = new AdressePostale();
+//		p1.adresse = new AdressePostale();
 		p1.adresse.CP = 56930;
 		p1.adresse.libelleRue = "Impasse Edith Piaf";
 		p1.adresse.numeroRue = 14;
@@ -22,7 +22,7 @@ public class TestPersonne {
 		
 		p2.nom = "Bonnamy";
 		p2.prenom = "Richard";
-		p2.adresse = new AdressePostale();
+//		p2.adresse = new AdressePostale();
 		p2.adresse.CP = 44000;
 		p2.adresse.libelleRue = "rue de Java";
 		p2.adresse.numeroRue = 55;

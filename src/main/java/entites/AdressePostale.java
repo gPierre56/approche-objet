@@ -7,6 +7,13 @@ public class AdressePostale {
 	public int CP;
 	public String ville;
 	
+	public AdressePostale(int numeroRue, String libelleRue, int CP, String ville) {
+		this.numeroRue = numeroRue;
+		this.libelleRue = libelleRue;
+		this.CP = CP;
+		this.ville = ville;
+	}
+	
 	
 	@Override
 	public String toString() {
