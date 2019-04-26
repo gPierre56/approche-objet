@@ -21,7 +21,7 @@ public class TestForme {
 		a.afficher(cercle);
 		a.afficher(rectangle);
 		a.afficher(carre);
-		System.out.println(aff.afficher(carre).calculerSurface());
+		System.out.println(aff.afficher(cercle).calculerSurface());
 	}
 
 }
