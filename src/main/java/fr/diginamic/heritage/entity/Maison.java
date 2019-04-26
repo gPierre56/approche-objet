@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Maison {
+import fr.diginamic.tp6.ISurface;
+
+public class Maison implements ISurface {
 
 	private Piece[] pieces;
 	private int cpt;
@@ -35,12 +37,12 @@ public class Maison {
 
 	// addition des superficies du tableau de pieces de chaque maison pour donner la
 	// superficie totale des pièces
-	public void donnerSuperficie() {
+	public double calculerSurface() {
 		double superficie = 0;
 		for (int i = 0; i < pieces.length; i++) {
 			superficie = pieces[i].superficie + superficie;
 		}
-		System.out.println(superficie);
+		return superficie;
 	}
 
 	// superficie globale pour un type de piece donné

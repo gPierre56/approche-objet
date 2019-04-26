@@ -4,6 +4,7 @@ import fr.diginamic.heritage.entity.Carre;
 import fr.diginamic.heritage.entity.Cercle;
 import fr.diginamic.heritage.entity.Rectangle;
 import fr.diginamic.heritage.util.AffichageForme;
+import fr.diginamic.tp6.AffichageSurface;
 
 public class TestForme {
 
@@ -11,6 +12,7 @@ public class TestForme {
 		// TODO Auto-generated method stub
 
 		AffichageForme a = new AffichageForme();
+		AffichageSurface aff = new AffichageSurface();
 
 		Cercle cercle = new Cercle(5);
 		Rectangle rectangle = new Rectangle(10, 6);
@@ -19,6 +21,7 @@ public class TestForme {
 		a.afficher(cercle);
 		a.afficher(rectangle);
 		a.afficher(carre);
+		System.out.println(aff.afficher(carre).calculerSurface());
 	}
 
 }

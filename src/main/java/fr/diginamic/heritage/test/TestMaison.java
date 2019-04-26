@@ -6,11 +6,14 @@ import fr.diginamic.heritage.entity.Maison;
 import fr.diginamic.heritage.entity.Piece;
 import fr.diginamic.heritage.entity.SalleDeBain;
 import fr.diginamic.heritage.entity.Salon;
+import fr.diginamic.tp6.AffichageSurface;
 
 public class TestMaison {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+
+		AffichageSurface aff = new AffichageSurface();
 
 		SalleDeBain sdb = new SalleDeBain(50, 2);
 		Salon salon = new Salon(25, 0);
@@ -26,10 +29,11 @@ public class TestMaison {
 		maison.ajouterPiece(cuisine);
 		maison.ajouterPiece(salon);
 
-		maison.donnerSuperficie();
+		maison.calculerSurface();
 		System.out.println(maison);
 		maison.donnerSuperficieType(chambre);
 		maison.donnerNbPieces(chambre);
+		System.out.println(aff.afficher(maison).calculerSurface());
 
 	}
 
