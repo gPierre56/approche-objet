@@ -29,7 +29,7 @@ public class TestListeString {
 			}
 		}
 
-		System.out.println("La ville la plus longue est :" + plusLongueVille);
+		System.out.println("La ville la plus longue est : " + plusLongueVille);
 
 		// toutes les villes en majuscule
 		for (int i = 0; i < liste1.size(); i++) {
@@ -38,11 +38,13 @@ public class TestListeString {
 
 		System.out.println(liste1);
 
+		// Retrait de toutes les villes commençant par "n"
+
 		Iterator<String> iter = liste1.iterator();
 
 		while (iter.hasNext()) {
 			String string = iter.next();
-			if (string.substring(0, 0).equalsIgnoreCase("n")) {
+			if (string.substring(0, 1).equalsIgnoreCase("n")) {
 				iter.remove();
 			}
 

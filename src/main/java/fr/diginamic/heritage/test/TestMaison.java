@@ -1,5 +1,7 @@
 package fr.diginamic.heritage.test;
 
+import java.util.ArrayList;
+
 import fr.diginamic.heritage.entity.Chambre;
 import fr.diginamic.heritage.entity.Cuisine;
 import fr.diginamic.heritage.entity.Maison;
@@ -21,7 +23,7 @@ public class TestMaison {
 		Chambre chambre = new Chambre(15, 1);
 		Chambre chambre2 = new Chambre(1, 1);
 
-		Maison maison = new Maison(new Piece[0]);
+		Maison maison = new Maison(new ArrayList<Piece>());
 
 		maison.ajouterPiece(chambre);
 		maison.ajouterPiece(chambre2);

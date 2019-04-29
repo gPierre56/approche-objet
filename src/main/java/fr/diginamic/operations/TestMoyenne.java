@@ -5,7 +5,7 @@ public class TestMoyenne {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		CalculMoyenne calcul = new CalculMoyenne(2);
+		CalculMoyenne calcul = new CalculMoyenne();
 
 		calcul.ajoutNombre(10);
 		calcul.ajoutNombre(20);
