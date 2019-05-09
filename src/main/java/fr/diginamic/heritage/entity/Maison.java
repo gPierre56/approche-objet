@@ -11,8 +11,10 @@ public class Maison implements ISurface {
 
 	// Fonction qui ajoute des objets de type piece tout en gérant la capacité du
 	// tableau
-	public void ajouterPiece(Piece piece) {
-
+	public void ajouterPiece(Piece piece) throws MaisonException {
+		if (piece == null) {
+			throw new MaisonException("Vous tentez d'ajouter un élément null");
+		}
 		pieces.add(piece);
 
 	}

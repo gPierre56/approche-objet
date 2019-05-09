@@ -46,21 +46,24 @@ public class TestPays {
 
 		for (Pays pays : set) {
 			if ((pays.getPib() * pays.getNbHabitants()) < min) {
-				max = pays.getPib() * pays.getNbHabitants();
-				Otmp = pays;
+				min = pays.getPib() * pays.getNbHabitants();
+
 				tmp = pays.getNom();
 			}
 		}
 
 		for (Pays pays : set) {
-			if (pays.getNom() == tmp) {
+			if (pays.getNom().equals(tmp)) {
 				pays.setNom(tmp.toUpperCase());
+
+				Otmp = pays;
 			}
 		}
-
-		System.out.println(set);
+		System.out.println("***** " + Otmp);
 
 		set.remove(Otmp);
+
+		System.out.println(set);
 
 	}
 

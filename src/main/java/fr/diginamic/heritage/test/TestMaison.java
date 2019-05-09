@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import fr.diginamic.heritage.entity.Chambre;
 import fr.diginamic.heritage.entity.Cuisine;
 import fr.diginamic.heritage.entity.Maison;
+import fr.diginamic.heritage.entity.MaisonException;
 import fr.diginamic.heritage.entity.Piece;
 import fr.diginamic.heritage.entity.SalleDeBain;
 import fr.diginamic.heritage.entity.Salon;
@@ -25,11 +26,16 @@ public class TestMaison {
 
 		Maison maison = new Maison(new ArrayList<Piece>());
 
-		maison.ajouterPiece(chambre);
-		maison.ajouterPiece(chambre2);
-		maison.ajouterPiece(sdb);
-		maison.ajouterPiece(cuisine);
-		maison.ajouterPiece(salon);
+		try {
+			maison.ajouterPiece(chambre);
+			maison.ajouterPiece(chambre2);
+			maison.ajouterPiece(sdb);
+			maison.ajouterPiece(cuisine);
+			maison.ajouterPiece(salon);
+		} catch (MaisonException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		maison.calculerSurface();
 		System.out.println(maison);

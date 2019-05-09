@@ -27,7 +27,7 @@ public class Pays {
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		temp = Double.doubleToLongBits(nbHabitants);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
-		result = prime * result + ((nom == null) ? 0 : nom.hashCode());
+		result = prime * result + ((nom == null) ? 0 : nom.toLowerCase().hashCode());
 		return result;
 	}
 
