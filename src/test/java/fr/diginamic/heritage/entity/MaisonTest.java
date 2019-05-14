@@ -38,22 +38,4 @@ public class MaisonTest {
 
 	}
 
-	@Test
-	public void testDonnerSuperficieType() throws MaisonException {
-
-		// méthode void
-
-	}
-
-	@Test
-	public void testDonnerNbPieces() {
-
-		// méthode void
-	}
-
-	@Test
-	public void testMaison() {
-
-	}
-
 }
